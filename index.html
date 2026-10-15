@@ -17,7 +17,7 @@
   --paper:#ffffff;
   --tint:#f3f7fb;
   --ink:#10202f;
-  --muted:#5b6773;
+  --muted:#4d5965;
   --rule:#dfe5eb;
   --blue:#1673c4;
   --navy:#0c1d2e;
@@ -59,11 +59,13 @@ nav a:hover{color:var(--sky)}
 .hero h1 em{font-style:normal;color:var(--sky)}
 .hero .lede{font-size:1.12rem;color:var(--navy-muted);max-width:var(--measure)}
 .btn{display:inline-flex;align-items:center;padding:12px 20px;font-weight:600;font-size:.97rem;text-decoration:none;cursor:pointer;font-family:var(--body);border:1.5px solid transparent}
-.btn.primary{background:var(--sky);color:var(--on-sky);align-self:flex-start;margin-top:6px}
+.btn.primary{background:var(--sky);color:var(--on-sky);align-self:flex-start;margin-top:6px;padding:15px 28px;font-size:1.05rem}
 .btn.primary:hover{background:var(--navy-ink)}
 .btn.line{border-color:var(--muted);color:var(--ink);background:var(--paper)}
 .btn.line:hover{border-color:var(--blue);color:var(--blue)}
-.meta{font-size:.9rem;color:var(--navy-muted)}
+.meta{font-size:.9rem;color:var(--navy-muted);display:flex;flex-wrap:wrap;gap:6px 20px}
+.meta span+span{padding-left:20px;border-left:1px solid var(--navy-line)}
+@media (max-width:520px){.meta{flex-direction:column}.meta span+span{padding-left:0;border-left:0}}
 section{padding-block:68px}
 section+section{border-top:1px solid var(--rule)}
 .head{display:flex;flex-direction:column;gap:8px;margin-bottom:32px}
@@ -71,7 +73,7 @@ section+section{border-top:1px solid var(--rule)}
 .offer{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .item{background:var(--tint);padding:22px;display:flex;flex-direction:column;gap:8px;min-width:0}
 .item .bar{width:28px;height:4px;background:var(--blue)}
-.item p{color:var(--muted);font-size:.95rem}
+.item p{color:var(--muted);font-size:.98rem}
 .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
 .step{border-top:2px solid var(--ink);padding-top:16px;display:flex;flex-direction:column;gap:8px;min-width:0}
 .step .n{font-size:.85rem;font-weight:600;color:var(--blue)}
@@ -130,9 +132,9 @@ footer .wrap{padding-block:22px;display:flex;justify-content:space-between;gap:1
     </div>
     <div class="hero-main">
       <h1>Your Wholesale Partner for <em>Online Growth</em></h1>
-      <p class="lede">We buy wholesale from brands and their authorized distributors, and sell on Amazon.ca and Amazon.com at your prices.</p>
+      <p class="lede">We buy inventory wholesale from brands and their authorized distributors, and sell it on Amazon.ca and Amazon.com.</p>
       <a class="btn primary" href="#contact">Contact Us</a>
-      <p class="meta">Selling on Amazon since 2017</p>
+      <p class="meta"><span>Selling on Amazon since 2017</span><span>We buy and own our inventory</span></p>
     </div>
   </div>
 </div>
@@ -146,10 +148,10 @@ footer .wrap{padding-block:22px;display:flex;justify-content:space-between;gap:1
     </div>
     <div class="offer">
       <div class="item"><span class="bar"></span><h3>Authorized Supply</h3><p>Bought only from brands or their authorized distributors.</p></div>
-      <div class="item"><span class="bar"></span><h3>Pricing Respected</h3><p>Sold at each brand's suggested and minimum advertised prices.</p></div>
+      <div class="item"><span class="bar"></span><h3>Pricing Respected</h3><p>We follow each brand's MAP policy and pricing guidelines.</p></div>
       <div class="item"><span class="bar"></span><h3>Kept in Stock</h3><p>Reordered from real sales and shipped through Fulfillment by Amazon.</p></div>
       <div class="item"><span class="bar"></span><h3>Canada and the US</h3><p>One partner for Amazon.ca and Amazon.com.</p></div>
-      <div class="item"><span class="bar"></span><h3>Advertising</h3><p>Sponsored ad campaigns on the products we carry, run at our cost and reviewed regularly.</p></div>
+      <div class="item"><span class="bar"></span><h3>Advertising</h3><p>Sponsored ad campaigns on selected products, run at our cost and reviewed regularly.</p></div>
       <div class="item"><span class="bar"></span><h3>Brand Protection</h3><p>We monitor the other sellers on your listings and flag MAP violations and unauthorized resellers to you.</p></div>
     </div>
   </div>
@@ -172,23 +174,23 @@ footer .wrap{padding-block:22px;display:flex;justify-content:space-between;gap:1
   <div class="wrap">
     <div class="head">
       <h2>Exclusive Partnership and Brand Registry</h2>
-      <p>For brands that want one trusted seller on Amazon, we can take on your brand as its exclusive seller and manage your Amazon Brand Registry.</p>
+      <p>Optional, for brands that want one trusted seller on Amazon. A standard wholesale account never requires it.</p>
     </div>
     <div class="excl">
       <div class="panel">
         <h3>Exclusive Seller</h3>
         <ul class="ticks">
-          <li><b>One seller, stable prices.</b> No price wars between resellers on your listings.</li>
+          <li><b>One seller, steadier prices.</b> Fewer resellers competing on price on your listings.</li>
           <li><b>Steady orders.</b> We buy consistently to keep your listings in stock.</li>
-          <li><b>Clean listings.</b> One accurate listing per product, with your approved content.</li>
+          <li><b>Consistent listings.</b> Product pages built from your approved content.</li>
           <li><b>Less work for you.</b> We handle Amazon day to day, so your team doesn't have to.</li>
         </ul>
       </div>
       <div class="panel dark">
         <h3>Brand Registry</h3>
-        <p>Amazon Brand Registry gives a trademark owner control over its brand on Amazon. We help you enroll and manage it for you as your agent. You stay the owner.</p>
+        <p>Amazon Brand Registry gives a trademark owner tools to protect and manage its brand on Amazon. We help you enroll and manage it as your agent, with the access you choose. You stay the owner.</p>
         <ul class="ticks">
-          <li><b>Control of your listings.</b> Your titles, images and descriptions take priority.</li>
+          <li><b>More say over your listings.</b> Your titles, images and descriptions carry more weight with Amazon.</li>
           <li><b>Richer pages.</b> A+ Content and a Brand Store that show your products properly.</li>
           <li><b>Protection tools.</b> Report counterfeits and infringing listings directly to Amazon.</li>
         </ul>
@@ -203,11 +205,11 @@ footer .wrap{padding-block:22px;display:flex;justify-content:space-between;gap:1
       <h2>FAQ</h2>
     </div>
     <div class="faq">
-      <details><summary>Do You Respect MAP and Suggested Pricing?</summary><p>Yes. We always list at or above your minimum advertised price and follow your suggested retail pricing. When your pricing changes, send us the update and we adjust our listings.</p></details>
+      <details><summary>Do You Respect MAP and Suggested Pricing?</summary><p>Yes. We never list below your minimum advertised price, and we follow the pricing guidelines you share with us. When your pricing changes, send us the update and we adjust our listings.</p></details>
       <details><summary>Where Do You Buy Your Inventory?</summary><p>Only directly from the brand or from its authorized distributors, with an invoice for every purchase. We never source from liquidators, retail stores or other resellers.</p></details>
       <details><summary>Which Marketplaces Do You Sell On?</summary><p>Amazon.ca and Amazon.com. Every order is fulfilled by Amazon, so your customers get fast Prime delivery and Amazon's customer service.</p></details>
       <details><summary>How Do You Choose Which Products to Order?</summary><p>We review your full catalogue, order the products that fit Amazon best, then reorder based on real sales so your listings stay in stock.</p></details>
-      <details><summary>How Do You Pay?</summary><p>At the time of the order, by credit card or bank transfer. There are no payment terms to manage and nothing to chase.</p></details>
+      <details><summary>How Do You Pay?</summary><p>Prepaid, by credit card or bank transfer. There are no payment terms to manage and nothing to chase.</p></details>
       <details><summary>Do You Follow Brand Channel Restrictions?</summary><p>Yes. Tell us about any brand or product line that can't be sold on Amazon, and we won't order it.</p></details>
       <details><summary>Do You Need Exclusivity?</summary><p>No. We work alongside your existing retail and online channels and follow any channel or pricing guidelines you have. For brands that want a single seller on Amazon, we can build an exclusive arrangement around your goals, so the brand grows and stays protected over the long term.</p></details>
       <details><summary>What Do You Need to Manage Our Brand Registry?</summary><p>A registered or pending trademark for your brand. You enroll as the owner and add us as your agent, and you can change or remove our access at any time.</p></details>
